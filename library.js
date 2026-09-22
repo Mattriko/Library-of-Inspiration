@@ -34,6 +34,8 @@ window.CATEGORIES = [
   "Component",
   "Device Mockup",
   "Illustration",
+  "Case Study",
+  "Navigation",
 ];
 
 // name -> swatch shown in the color filter
@@ -50,9 +52,124 @@ window.COLOR_FAMILIES = {
   Violet: "#a64dff",
   Peach: "#e9b7a0",
   Gold: "#d9a441",
+  Orange: "#ff5a1f",
 };
 
 window.LIBRARY = [
+  {
+    id: "brand-direction-studio-hero",
+    title: "Split Editorial Hero with Motion-Blur Fashion",
+    project: "Brand Direction Studio",
+    category: "Hero",
+    tone: "Light",
+    styles: ["Editorial", "Swiss Grid", "Fashion Photography", "Motion Blur", "Minimal"],
+    colors: ["Gray", "Warm Neutral", "Orange", "Black"],
+    palette: ["#e4e4e2", "#d6d6d3", "#1a1a1a", "#e06a2c", "#6f89a6"],
+    mood: ["Confident", "Artsy", "Calm"],
+    images: ["brand-direction-studio-hero.jpg"],
+    brief:
+      "A light-gray studio site where the page is split into bands: a thin nav plus two fashion photos in the top right, a short welcome paragraph in the middle, and a huge thin-weight studio name with a registered mark running along the bottom. One photo is a motion-blurred walking figure on white, the other a figure lit against burnt orange. They give an otherwise quiet grid all its energy. A small live clock (9:41 UTC−05:00) in the corner adds a tiny, human detail.",
+    prompt:
+      "Minimal editorial studio website hero on light gray, thin sans-serif navigation, two fashion photographs in the top right (one motion-blurred model walking in a dark coat on white, one model in a white puffer suit against a glowing burnt orange backdrop), short gray intro paragraph, oversized thin black wordmark with a registered symbol across the bottom, small timestamp in the corner, generous whitespace, Swiss grid, 4:3",
+    notes: "Big thin wordmark at the bottom instead of the top. The live-time detail is an easy personality win.",
+    source: "",
+    added: "2026-09-22",
+  },
+  {
+    id: "5pm-brand-list-menu",
+    title: "Brand-List Menu over Blurred Imagery",
+    project: "5PM",
+    category: "Navigation",
+    tone: "Light",
+    styles: ["Large Type", "Outline Type", "Blur Gradient", "Editorial", "Minimal"],
+    colors: ["White", "Black", "Orange", "Slate"],
+    palette: ["#f4f4f2", "#111111", "#e98a6e", "#4a5578", "#9aa0a6"],
+    mood: ["Playful", "Confident", "Fashion-Forward"],
+    images: ["5pm-brand-list-menu.jpg"],
+    brief:
+      "A full-screen menu for a fashion store where the brand list is set as a giant run-on sentence of names separated by commas, like 'Arpège, Cromwell Clothes, Kappa…'. The hovered name switches to an outline, and behind the text the product photos are blurred into soft color fields (salmon, gray, navy). The list itself becomes the visual, and the blur keeps it readable while hinting at the product.",
+    prompt:
+      "Fashion ecommerce website menu overlay, huge black sans-serif text listing brand names as one run-on sentence separated by commas, one name shown as a thin outline to indicate hover, behind the text heavily blurred product photos forming soft salmon, gray and navy color blocks, small navigation links at top, thin close X icon top right, white background, minimal editorial, 3:2",
+    notes: "Comma-separated inline list as navigation. Blur the imagery so the type stays the hero.",
+    source: "https://5pm.fr",
+    added: "2026-09-22",
+  },
+  {
+    id: "creative-studio-echoes-of-lucency",
+    title: "Case Study with Ghostly Blurred Portrait",
+    project: "Creative Studio",
+    category: "Case Study",
+    tone: "Light",
+    styles: ["Editorial", "Swiss Grid", "Motion Blur", "Iridescent", "Minimal"],
+    colors: ["White", "Black", "Blue", "Lavender"],
+    palette: ["#f7f7f5", "#111111", "#1d2a44", "#c9d6ea", "#b7a9e8"],
+    mood: ["Ethereal", "Precise", "Premium"],
+    images: ["creative-studio-echoes-of-lucency.jpg"],
+    brief:
+      "A case-study page for a cosmetics identity: a large project number ('06') and a bold two-line title on the left, a tidy ruled table of client/year/services, and a short info paragraph. The right half is a long-exposure portrait in icy blue and black where the face dissolves into streaks. The whole page floats on an iridescent, prismatic light-leak background. It balances clinical typographic order with a dreamy, alien image.",
+    prompt:
+      "Editorial agency case study web page on white floating over an iridescent prismatic rainbow light streak background, large bold black sans-serif title with a gray project number, thin ruled metadata table for client, year and services, short paragraph, right half filled with a long-exposure ghostly portrait of a pale woman in icy blue and deep black with motion streaks, minimal brutalist precision, 1:1",
+    notes: "Ruled metadata tables look great for case-study details. The iridescent backdrop frames the page like a print.",
+    source: "",
+    added: "2026-09-22",
+  },
+  {
+    id: "creative-studio-unfolding-case-study",
+    title: "Numbered Case Study with Zoom-Blur Banner",
+    project: "Creative Studio",
+    category: "Case Study",
+    tone: "Light",
+    styles: ["Editorial", "Swiss Grid", "Motion Blur", "Minimal"],
+    colors: ["White", "Black", "Green", "Blue", "Orange"],
+    palette: ["#ffffff", "#141414", "#2f5a3c", "#b8cbe6", "#e8864f"],
+    mood: ["Calm", "Artsy", "Clear"],
+    images: ["creative-studio-unfolding-case-study.jpg"],
+    brief:
+      "A white case-study layout for an art project. A thin-weight '01/06' counter sits top left, services and industry details in small columns, and a bold three-line title ('Unfolding the Unseen…') beside two paragraphs of body copy. A wide banner at the bottom shows a radial zoom-blurred photo in green, sky blue and orange, so the only color on the page comes from that single strip. The nav uses comma-separated links ('Info, Work, Index, About,') with the current page darker.",
+    prompt:
+      "Minimal editorial art studio case study web page, white background, large light-gray thin '01/06' counter, small columns of services and location text, bold black three-line headline next to two paragraphs of body text, full-width banner at the bottom with an abstract radial zoom blur photograph in deep green, pale sky blue and soft orange, Swiss grid layout, 1:1",
+    notes: "Comma-separated nav links. The 01/06 counter tells visitors where they are in the project series.",
+    source: "",
+    added: "2026-09-22",
+  },
+  {
+    id: "other-studio-portfolio-grid",
+    title: "Minimal Studio Portfolio Grid",
+    project: "Other°",
+    category: "Hero",
+    tone: "Light",
+    styles: ["Editorial", "Minimal", "Product Photography", "Swiss Grid"],
+    colors: ["White", "Gray", "Warm Neutral", "Peach"],
+    palette: ["#f6f6f6", "#cfcfcf", "#1a1a1a", "#c89f7a", "#d88f86"],
+    mood: ["Premium", "Calm", "Tactile"],
+    images: ["other-studio-portfolio-grid.jpg"],
+    brief:
+      "A creative agency homepage that goes straight to the work. There's a big 'Other°' wordmark, a one-line description, a 'Selected Works' label with a superscript count, and a Grid / List / Feed / Full view switcher set in large gray type. Below is a tight grid of square thumbnails with a soft, cohesive art direction: glossy lips, soap, a metal jar, beige fashion. The consistent color grading makes a varied portfolio feel like one brand.",
+    prompt:
+      "Minimal creative agency portfolio homepage, off-white background, large black sans-serif studio name with a degree symbol, small description text, 'Selected Works' label with superscript count, view toggle options in large light gray text, tight grid of square thumbnails of soft beige and muted product and fashion photography (glossy lips, soap bar, brushed metal jar, model in beige hoodie), cohesive warm neutral color grading, 16:10",
+    notes: "View switcher (Grid/List/Feed/Full) set as large type. Consistent grading across the thumbnails.",
+    source: "https://www.allforframer.com",
+    added: "2026-09-22",
+  },
+  {
+    id: "feeld-illustration-landing",
+    title: "Single-Color Line Illustration Landing",
+    project: "Feeld",
+    category: "Full Page",
+    tone: "Light",
+    styles: ["Illustration", "Line Art", "Minimal", "Light UI"],
+    colors: ["White", "Orange", "Gray"],
+    palette: ["#ffffff", "#ff4a1c", "#ececec", "#9a9a9a", "#141414"],
+    mood: ["Playful", "Intimate", "Warm"],
+    images: ["feeld-illustration-landing.jpg"],
+    brief:
+      "A dating app landing page that leads with one large illustration: two figures embracing, drawn in bold red-orange outlines with flat fills and polka dots on white. The copy is tiny and quiet (two lines plus store icons), so the drawing does all the emotional work. Below, a gray section pairs a feature list (with the active item darker) with a live phone preview of profiles, and a thin progress bar suggests an auto-playing walkthrough.",
+    prompt:
+      "Minimal app landing page, white background, one large illustration of two people embracing drawn in bold red-orange line art with flat red-orange fills and polka dot pattern, small black intro text top left, below a light gray section with a vertical feature list and a phone screen showing profile photo cards, thin progress bar, clean simple footer links, playful and intimate, 3:4",
+    notes: "Single spot color + white does a lot. The feature list synced to a phone preview is a good pattern.",
+    source: "",
+    added: "2026-09-22",
+  },
   {
     id: "doss-ribbon-hero",
     title: "Monochrome Ribbon Hero",
